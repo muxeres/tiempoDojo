@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wheather Forecast codingDojo CG</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar-content">
+        <div class="navbar">
+            <h1>Dojo Weather CG</h1>
+            <ul class="cities">
+                <li><a href="#" class="cities-link" onclick="alerts()">Burbank</a></li>
+                <li><a href="#" class="cities-link" onclick="alerts()">Chicago</a></li>
+                <li><a href="#" class="cities-link" onclick="alerts()">Dallas</a></li>
+            </ul>
+        </div>
+    </nav>
+    <header class="header">
+        <h2 class="title">San Jose</h2>
+        <div class="select-temperature">
+            <span>show temperature in </span>
+            <select name="select" id="select" class="select" onchange="changeTemp(this)">
+                <option value="celcius">°C</option>
+                <option value="fahrenheit">°F</option>
+            </select>
+        </div>
+    </header>
+    <main class="main">
+        <div class="card">
+            <ul class="card-item">
+                <li><h3>Today</h3></li>
+                <li><img class="wth-image" src="./assets/some_rain.png" alt=""></li>
+                <li>some rain</li>
+                <li class="temperatures">
+                    <span class="temp0" id="temp">24°</span>
+                    <span class="temp1" id="temp">18°</span>
+                </li>
+            </ul>
+        </div>
+        <div class="card">
+            <ul class="card-item">
+                <li><h3>Tomorrow</h3></li>
+                <li><img class="wth-image" src="./assets/some_sun.png" alt=""></li>
+                <li>some sun</li>
+                <li class="temperatures">
+                    <span class="temp0" id="temp">27°</span>
+                    <span class="temp1" id="temp">19°</span>
+                </li>
+            </ul>
+        </div>
+        <div class="card">
+            <ul class="card-item">
+                <li><h3>friday</h3></li>
+                <li><img class="wth-image" src="./assets/some_clouds.png" alt=""></li>
+                <li>some clouds</li>
+                <li class="temperatures">
+                    <span class="temp0" id="temp">21°</span>
+                    <span class="temp1" id="temp">16°</span>
+                </li>
+            </ul>
+        </div>
+        <div class="card">
+            <ul class="card-item">
+                <li><h3>Saturday</h3></li>
+                <li><img class="wth-image" src="./assets/some_rain.png" alt=""></li>
+                <li>some sun</li>
+                <li class="temperatures">
+                    <span class="temp0" id="temp">26°</span>
+                    <span class="temp1" id="temp">21°</span>
+                </li>
+            </ul>
+        </div>
+    </main>
+    <div class="message-cookie" id="message-cookie">
+        <div class="cookie-img"><img src="./assets/cookie.png" alt=""></div>
+        <div class="text-side">
+            <h4>Stop! Cookie time</h4>
+            <p>We use cookies (sadly not edible ones) to personalize contents ads, to provide social media features and analyse our traffic. <a href="#">Read more...</a><br> </p>
+        </div>
+        <div><button class="btn" onclick="removes()">I Accept</button></div>
+    </div>
+    <!-- JS -->
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    box-sizing: border-box;
+    font-family: 'Balsamiq Sans', cursive;
+    font-size: 1.4rem;
+}
+.navbar-content{
+    background-color: #9fc5f8;
+    color: white; 
+}
+.navbar{
+    height: 50px;
+    width: 800px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cities{
+    display: flex;
+    list-style-type: none;
+}
+.cities > li {
+    padding: 0px 30px;
+}
+.cities-link{
+    color: white;
+    text-decoration:none;
+}
+.header{
+    width: 800px;
+    margin: 0  auto;
+    border-bottom: 5px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.select{
+    width: 50px;
+    height: 30px;
+}
+.main{
+    width: 800px;
+    margin: 0  auto;
+    display: flex;
+}
+.wth-image{
+    width: 100px;
+    border-radius: 50%;
+}
+.card{
+    flex: 1;
+    text-align: center;
+}
+.card-item{
+    list-style-type: none;
+    margin: 30px 10px;
+    padding: 20px;
+    background-color: #eeeeee;
+}
+.temperatures{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 1px;
+}
+.temp0{
+    color: #d0312e;
+}
+.temp1{
+    color: #307be4;
+}
+.message-cookie{
+    width: 700px;
+    margin: 0 auto;
+    border: 2px solid black;
+    padding: 30px;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+}
+.btn{
+    width: 70px;
+    height: 30px;
+    border: 2px solid black;
+    box-shadow: 3px 3px black;
+    background-color: #9fc5f8;
+}
+.cookie-img{
+    margin-right: 20px;
+}
